@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.titre {
+  background-color: blue;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header>h1 {
+  color: aliceblue;
+  font-size: 40px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sectionTab {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.sectionTab>img {
+  height: 50%;
+  width: 50%;
+
+}
+
+table.tabInfo {
+  border: 2px solid black;
+  width: 91%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.tabInfo td,
+table.tabInfo th {
+  border: 2px solid black;
+  padding: 3px 2px;
+}
+
+table.tabInfo tbody td {
+  font-size: 14px;
+}
+
+table.tabInfo thead {
+  background: #CBCBCB;
+}
+
+table.tabInfo thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+
+}
+
+.tabDePixel {
+  width: 33%;
+}
+
+.formulaire {
+  width: 33%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.formulaire h2 {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.formulaire div:not(.boutonsEquipe,.progress) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.identification>input {
+  height: 20px;
+}
+
+.boutonsEquipe {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.boutonsEquipe>button {
+  padding: 2px;
+  font-weight: 700;
+}
+
+.boutonsEquipe>button:hover {
+  background-color: green;
+}
+
+canvas {
+  background-color: #000000;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 15px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(90deg, rgba(179,137,247,1) 0%, rgba(85,69,247,1) 100%);
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+  font-size: 11px;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 1;
+	transition: 1s ease 0.3s;
+}

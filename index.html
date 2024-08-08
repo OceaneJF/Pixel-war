@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pixel IUT war</title>
+  </head>
+  <body>
+    <header class="titre">
+      <h1>Pixel war IUT</h1>
+    </header>
+    <main>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Veuillez entrer l'UID fourni par votre enseignant pour pouvoir modifier un pixel</p>
+        </div>
+      
+      </div>
+      <section class="sectionTab">
+        <img src="pixelwar.PNG" alt="image pixel war" />
+        <table class="tabInfo">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Equipe</th>
+              <th>Dernière Modifictaion</th>
+              <th>Banni</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+      <section class="tabDePixel">
+        <canvas id="canvas"> </canvas>
+      </section>
+      <section class="formulaire">
+        <div class="identification">
+          <h2>Identification obligatoire</h2>
+          <input
+            type="password"
+            name="UID"
+            id="UID"
+            placeholder="Entrez votre UID"
+            size="30"
+          />
+        </div>
+        <div class="choixCouleur">
+          <h2>Choisir une couleur</h2>
+          <input type="color" id="colorPicker" value="#FFFFFF" />
+        </div>
+        <div class="attente">
+          <h2>Temps d'attente</h2>
+          <div class="progress">
+            <div class="progress-done">
+            </div>
+          </div>
+          <p>Vous pouvez modifier un pixel</p>
+        </div>
+        <div class="equipe">
+          <h2>Choisir une équipe</h2>
+          <div class="boutonsEquipe">
+            <button id="1">Equipe 1</button>
+            <button id="2">Equipe 2</button>
+            <button id="3">Equipe 3</button>
+            <button id="4">Equipe 4</button>
+          </div>
+        </div>
+        <div class="infoServeur">
+          <h2>Dernière information retournee par le serveur</h2>
+          <p></p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="pixel.js"></script>
+  </body>
+</html>
